@@ -1,15 +1,19 @@
 {
+ "allow_rename": 1,
+ "autoname": "field:article_name",
  "creation": "2021-11-18 17:44:37.933415",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "article_name",
-  "image",
   "author",
-  "description",
   "isbm",
+  "column_break_4",
+  "image",
   "status",
+  "description",
+  "section_break_8",
   "publisher"
  ],
  "fields": [
@@ -18,11 +22,13 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Article Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "image",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Image"
   },
   {
@@ -51,9 +57,18 @@
    "fieldname": "publisher",
    "fieldtype": "Data",
    "label": "Publisher"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
   }
  ],
- "modified": "2021-11-18 17:44:37.933415",
+ "image_field": "image",
+ "modified": "2021-11-18 20:45:37.750113",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
