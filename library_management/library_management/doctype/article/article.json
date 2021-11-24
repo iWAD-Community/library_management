@@ -1,4 +1,5 @@
 {
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:article_name",
  "creation": "2021-11-18 17:44:37.933415",
@@ -10,11 +11,12 @@
   "author",
   "isbm",
   "column_break_4",
-  "image",
   "status",
-  "description",
+  "publisher",
+  "route",
+  "image",
   "section_break_8",
-  "publisher"
+  "description"
  ],
  "fields": [
   {
@@ -65,10 +67,16 @@
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
- "modified": "2021-11-18 20:45:37.750113",
+ "modified": "2021-11-21 19:26:45.974369",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -85,9 +93,34 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
+ "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
